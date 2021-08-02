@@ -8,7 +8,7 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<div class="breadcomb-wp">
 									<div class="breadcomb-icon">
-										<i class="fas fa-hand-holding-usd"></i>
+										<i class="fas fa-handshake"></i>
 									</div>
 									<div class="breadcomb-ctn">
 										<h2>Rekapitulasi Pembagian Hasil</h2>

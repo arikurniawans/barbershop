@@ -59,6 +59,9 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/responsive.css">
     <!-- modernizr JS
 		============================================ -->
+    <!-- bootstrap select CSS
+		============================================ -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-select/bootstrap-select.css">
     <!-- notification CSS
 		============================================ -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/notification/notification.css">
@@ -113,14 +116,14 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="logo-area">
-                        <a href="#"><img src="<?php echo base_url(); ?>assets/img/logo/logo.png" alt="" /></a>
+                        <a href="#"><img src="<?php echo base_url(); ?>assets/img/logo/logo_barber.png" style="height: 40px; width: 50%;" alt="" /></a>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="header-top-menu">
                         <ul class="nav navbar-nav notika-top-nav">
                             <li class="nav-item" style="margin-left: 10px;">
-                                <a href="javascript:void(0);" role="button" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false" aria-expanded="false" class="nav-link dropdown-toggle">
+                                <a href="javascript:void(0);" role="button" data-toggle="modal" data-target="#modal-ubahpass" data-backdrop="static" data-keyboard="false" aria-expanded="false" class="nav-link dropdown-toggle">
                                     <font size="3px"><?php echo ucwords($this->session->userdata('nama')); ?></font> <i class="fa fa-user"></i>
                                 </a>
                             </li>
@@ -141,7 +144,7 @@
 
 
     <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="modal-ubahpass" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #00c292; color: white;">

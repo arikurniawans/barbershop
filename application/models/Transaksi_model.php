@@ -172,6 +172,24 @@ class Transaksi_model extends CI_Model
         return $query;
     }
 
+    public function rekapPembayaranHasil($bulan)
+    {
+        $this->db->select("users.id_user,users.nama, DATE_FORMAT(transaksi.created_at, '%M') AS bulan_transaksi,
+                        SUM(cart_transaksi.jumbel) AS qty,SUM(transaksi.total) AS total_transaksi");
+        $this->db->from('transaksi');
+        $this->db->join('users','users.id_user=transaksi.id_user');
+        $this->db->join('cart_transaksi','cart_transaksi.kode_transaksi=transaksi.kode_transaksi');
+        $this->db->join('produk_layanan','produk_layanan.id_produk_layanan=cart_transaksi.id_pl');
+        $this->db->where_not_in('user_status','owner');
+        $this->db->where('jenis','layanan');
+        if($bulan != null){
+            $this->db->where("DATE_FORMAT(transaksi.created_at,'%M')", $bulan);
+        }
+        $this->db->group_by('transaksi.id_user');
+        $query = $this->db->get();
+        return $query;
+    }
+
     public function deleteKeranjang($id, $kode)
     {
         $this->db->where('kode_transaksi', $kode);

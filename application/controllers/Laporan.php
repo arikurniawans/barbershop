@@ -203,4 +203,17 @@ class Laporan extends CI_Controller {
 
     }
 
+    public function rekapPembayaranBagiHasil()
+    {
+        $bulan = $this->input->post('bulan');
+        $data['pembayaran'] = $this->Transaksi_model->rekapPembayaranHasil($bulan)->result();
+        $data['bagi'] = $this->Pembagian_model->showPembagian()->row();
+        $data['karyawan_fee'] = $data['bagi']->pihak_2;
+
+        $this->load->view('parts/header');
+        $this->load->view('parts/ribbon');
+        $this->load->view('v_rekap-pembagian', $data);
+        $this->load->view('parts/footer');
+    }
+
 }

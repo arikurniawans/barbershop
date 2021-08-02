@@ -85,6 +85,9 @@
 		============================================ -->
     <script src="<?php echo base_url(); ?>assets/js/data-table/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url(); ?>assets/js/data-table/data-table-act.js"></script>
+    <!-- bootstrap select JS
+		============================================ -->
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap-select/bootstrap-select.js"></script>
 
     <script type="text/javascript">
         var rupiah = document.getElementById('rupiah');

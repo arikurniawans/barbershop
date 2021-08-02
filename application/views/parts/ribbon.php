@@ -29,6 +29,7 @@
                                         <li><a href="<?php echo base_url(); ?>laporan/rekapproduk">Rekap Transaksi Produk Barbershop</a></li>
                                         <!-- <li><a href="bar-charts.html">Laba Rugi</a></li> -->
                                         <li><a href="<?php echo base_url(); ?>laporan/rekappembagianhasil">Rekap Pembagian Hasil</a></li>
+                                        <li><a href="<?php echo base_url(); ?>laporan/rekappembayaranbagihasil">Rekap Pembayaran Bagi Hasil</a></li>
                                     </ul>
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#demodepart" href="#">Pengaturan</a>
@@ -99,6 +100,7 @@
                                 <li><a href="<?php echo base_url(); ?>laporan/rekapproduk">Rekap Transaksi Produk Barbershop</a></li>
                                 <!-- <li><a href="bar-charts.html">Laba Rugi</a></li> -->
                                 <li><a href="<?php echo base_url(); ?>laporan/rekappembagianhasil">Rekap Pembagian Hasil</a></li>
+                                <li><a href="<?php echo base_url(); ?>laporan/rekappembayaranbagihasil">Rekap Pembayaran Bagi Hasil</a></li>
                             </ul>
                         </div>
                         <div id="Tables" class="tab-pane notika-tab-menu-bg animated flipInX">
