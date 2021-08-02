@@ -1,0 +1,1 @@
+<div class="panel-heading" style="text-align: right;"><b><font size="4px">Total Bayar : <?php echo "Rp.".number_format($grand,0,",","."); ?></font></b></div>
